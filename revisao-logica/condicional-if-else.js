@@ -4,14 +4,21 @@ let comprouBilhete = false;
 const podeViajar = (idade >= 12 || paisPresentes) && comprouBilhete;
 console.log(`Pode viajar: ${podeViajar}`);
 
+//let msgMaiorIdade = ""
+//if (idade >= 18) {
+//    msgMaiorIdade = "É amior de idade"
+//} else {
+//    msgMaiorIdade = "É menor de idade"
+//}
+
+// Com o operador Ternario esse trecho acim pode ser substituido com o valor abaixo
+let msgMaiorIdade = (idade >= 18) ? "É maior de idade" : "É menor de idade"
+
+
 if (comprouBilhete) {
     console.log("Sim, comprou bilhete")
 } else {
-    if (idade >= 18) {
-        console.log("É maior de idade, pode viajar");
-    } else {
-        console.log("Opa!!! É menor de idade")
-    }
+    console.log(msgMaiorIdade)
 }
 
 let n1 = 5
