@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anos copa</title>
+    <title>Tabuada</title>
 </head>
 <body>
     <script>
-         function pulaLinha() {
+        function pulaLinha() {
             document.write("<br>");
             document.write("<br>");
         }
@@ -17,16 +17,23 @@
             document.write(frase);
             pulaLinha();
         }
-        var limite = parseInt(prompt("Entre com a data limite"))
-        var anoCopa = 1930;
 
-        while (anoCopa <= limite) {
-            mostra("Teve copa em " + anoCopa);
-            anoCopa = anoCopa + 4;
+        /* var multiplicador = 1;
+        while (multiplicador <= 10) {
+            mostra(7 * multiplicador);
+            multiplicador = multiplicador + 1;
+        } 
+        */
+        for (var multiplicador = 1; multiplicador <= 10; multiplicador++ ) {
+            mostra(7 * multiplicador)
         }
 
-        mostra("FIM");
+        mostra("FIM")
+
+        // Exemplo de pód incremento
+        var total = 0;
+        total++;
+
     </script>
-    
 </body>
 </html>
